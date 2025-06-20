@@ -124,8 +124,11 @@ function openCo() {
     }
 }
 function connexion() {
-    console.log(unameInput.value)
-    console.log(passwordInput.value)
+    if (unameInput.value && passwordInput.value) {
+        alert("Welcome " + unameInput.value)
+    } else {
+        alert("One of the argument or more are missing.")
+    }
 }
 
 //const boutton = document.getElementById("BouttonFuyant");
