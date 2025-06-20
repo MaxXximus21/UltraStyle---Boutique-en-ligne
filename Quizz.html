@@ -1,0 +1,139 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <head>
+        <title>Quizz</title>
+    </head>
+    <body>
+        <header>
+            <div class="rectangle1">
+                <a href="accueil.html"><img class="logo" src="logo.png"></a>
+            </div>
+            <h1 class = "titles">
+                Quizz sur mon eboutique
+            </h1>
+        </header>
+        <table class="QuizzTable">
+            <tr>
+                <th>
+                    Quel est le prix des lunettes aberrantes?
+                </th>
+                <th>
+                    <button class="RQCM" name="false" onclick="ReponseQuestion(name)">15 000$</button>
+                </th>
+                <th>
+                    <button class="RQCM" onclick="ReponseQuestion(name)" name="false">35 000$</button>
+                </th>
+                <th>
+                    <button class="RQCM" onclick="ReponseQuestion(name, 1)" name="good">1 300 000$</button>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Quand on etaient inventees les lunettes aberrantes?
+                </th>
+                <th>
+                    <button class="RQCM" name="good" onclick="ReponseQuestion(name, 2)">16/06/25</button>
+                </th>
+                <th>
+                    <button class="RQCM" onclick="ReponseQuestion(name)" name="false">18/06/25</button>
+                </th>
+                <th>
+                    <button class="RQCM" onclick="ReponseQuestion(name)" name="false">3/06/25</button>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Quand est ne Frank Leboeuf?
+                </th>
+                <th>
+                    <button class="RQCM" name="false" onclick="ReponseQuestion(name)">22/02/68</button>
+                </th>
+                <th>
+                    <button class="RQCM" onclick="ReponseQuestion(name, 3)" name="good">22/01/68</button>
+                </th>
+                <th>
+                    <button class="RQCM" onclick="ReponseQuestion(name)" name="false">22/12/75</button>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Combien vaut Frank Leboeuf?
+                </th>
+                <th>
+                    <button class="RQCM" name="false" onclick="ReponseQuestion(name)">350 000$</button>
+                </th>
+                <th>
+                    <button class="RQCM" onclick="ReponseQuestion(name, 4)" name="good">10^100$</button>
+                </th>
+                <th>
+                    <button class="RQCM" onclick="ReponseQuestion(name)" name="false">250 000$</button>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Qui est le créateur officiel des lunettes aberrantes?
+                </th>
+                <th>
+                    <button class="RQCM" name="good" onclick="ReponseQuestion(name, 5)">Lui</button>
+                </th>
+                <th>
+                    <button class="RQCM" onclick="ReponseQuestion(name)" name="false">Toi</button>
+                </th>
+                <th>
+                    <button class="RQCM" onclick="ReponseQuestion(name)" name="false">Pas toi</button>
+                </th>
+                <th>
+                    <button class="RQCM" onclick="ReponseQuestion(name)" name="false">Moi</button>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Qui est l'elu qui a peu porte les lunettes aberrantes en premier?
+                </th>
+                <th>
+                    <button class="RQCM" name="good" onclick="ReponseQuestion(name, 6)">Personne</button>
+                </th>
+                <th>
+                    <button class="RQCM" onclick="ReponseQuestion(name)" name="false">Jule</button>
+                </th>
+                <th>
+                    <button class="RQCM" onclick="ReponseQuestion(name)" name="false">Mose</button>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Qui a le pc "explosif"?
+                </th>
+                <th>
+                    <button class="RQCM" name="false" onclick="ReponseQuestion(name)">Haytem</button>
+                </th>
+                <th>
+                    <button class="RQCM" onclick="ReponseQuestion(name, 7)" name="good">Maxime</button>
+                </th>
+                <th>
+                    <button class="RQCM" onclick="ReponseQuestion(name)" name="false">Gabriel</button>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Qui a le pc mort et enterre?
+                </th>
+                <th>
+                    <button class="RQCM" name="good" onclick="ReponseQuestion(name, 8)">Mose</button>
+                </th>
+                <th>
+                    <button class="RQCM" onclick="ReponseQuestion(name)" name="false">Maxime</button>
+                </th>
+                <th>
+                    <button class="RQCM" onclick="ReponseQuestion(name)" name="false">Le Pape</button>
+                </th>
+            </tr>
+        </table>
+        <h2 class="score" id="scoreTxt">
+            Score : 0
+        </h2>
+        <button class="RQCM" onclick="ResetScore()">Reset Score</button>
+    </body>
+</html>

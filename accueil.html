@@ -1,0 +1,87 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <head>
+        <title>UltraStyle</title>
+    </head>
+    <body>
+        <header>
+            <div class="rectangle1">
+                <a><img class="logo" src="logo.png"></a>
+                <button class="Connexion" onclick="openCo()">Connexion</button>
+                <button class="panier" onclick="openPanier()">Panier</button>
+                <button class="cookies" onclick="ahahcookies()">Cookies?</button>
+            </div>
+            <h1 class = "titles">
+                Accueil de mon eboutique
+            </h1>
+        </header>
+        <div class="panierFrame" style="display: none;" id="idk">
+            
+        </div>
+        <div class="connexionFrame" style="display: none;" id="coFrame">
+            <form>
+                <label for="uname">Nom d'utilisateur: </label><br>
+                <input type="text" id="uname" name="uname" ></input><br>
+                <label for="password">Mot de passe: </label><br>
+                <input type="password" id="password" name="password"></input>
+            </form>
+            <button class="verifyConnexion" onclick="connexion()">Connexion</button>
+        </div>
+        <button class="articleInPanier" style="display: none;" id="Idk" onclick="deleteFromPanier(name)">
+            
+        </button>
+        <div class="texte"><h2>
+            Nos articles
+        </h2>
+            <table class ="articles">
+                <tr>
+                    <th>
+                        <a href="lunettesAberrantesPage.html">Lunettes aberrantes<img src="lunette.webp"></a>
+                        <button class="articleButton" name="Aberrantes" onclick="AddToPanier(name)">Ajouter au panier</button>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a href="lunettesFoxPage.html">Lunettes Fox<br><img src="lunettes2.png"></a>
+                        <button class="articleButton" name="Fox" onclick="AddToPanier(name)">Ajouter au panier</button>
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <a href="https://www.youtube.com/watch?v=TgGto2RgDeQ">Ce site a ete fait dans le cadre de l'ISEGCOM Code Camp</a>
+        <footer>
+            <table>
+                <tr>
+                    <th>
+                        Liens externes:
+                    </th>
+                    <th>
+                        <a href="helloworld.html">Hello World!</a>
+                    </th>
+                </tr>
+                <tr>
+                    <th> </th>
+                    <th>
+                        <a href="https://www.youtube.com/@MaxXximus21">IDK</a>
+                    </th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>
+                        <a href="Quizz.html">Quizz</a>
+                    </th>
+                </tr>
+                <!--<tr>
+                    <th></th>
+                    <th>
+                        <a href="miniGame.html">Mini - Game</a>
+                    </th>
+                </tr>-->
+            </table>
+        </footer>
+    </body>
+</html>
